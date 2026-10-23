@@ -1,0 +1,18 @@
+package cf1.decision.making;
+
+/**
+ *
+ * @author Ely Estolloso
+ */
+public class Simple_GradeClassifier {
+    public static void main(String[] args) {
+         int score = 85;
+
+        if (score >= 60) {
+            System.out.println("PASSED");
+        } else {
+            System.out.println("FAILED");
+        }
+    }
+    
+}

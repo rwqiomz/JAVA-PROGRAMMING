@@ -1,0 +1,36 @@
+package arrays;
+
+/**
+ *
+ * @author Ely Estolloso
+ */
+import java.util.Arrays;
+
+public class Mini_Tool {
+    public static void main(String[] args) {
+        int[] scores = {85, 90, 78, 92, 88, 75, 95, 80};
+        int target = 92;
+        int index = -1;
+
+        for (int i = 0; i < scores.length; i++) {
+            if (scores[i] == target) {
+                index = i;
+                break;
+            }
+        }
+
+        if (index != -1) {
+            System.out.println("Score " + target + " found at index " + index);
+        } else {
+            System.out.println("Score " + target + " not found.");
+        }
+
+        int[] sortedScores = scores.clone();
+
+        Arrays.sort(sortedScores);
+
+        System.out.println("Original Array: " + Arrays.toString(scores));
+        System.out.println("Sorted Array: " + Arrays.toString(sortedScores));
+    }
+    
+}

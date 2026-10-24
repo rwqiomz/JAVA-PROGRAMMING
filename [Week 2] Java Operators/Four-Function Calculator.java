@@ -12,14 +12,18 @@ package jv.operators;
 public class FourFunc_calxc {
     public static void main(String[] args) {
         
-        int num1= 54; 
-        int num2= 86;
+        int num1= 65; 
+        int num2= 87;
+
+        System.out.println("=================================================");
+        System.out.println("\t    FOUR FUNCTION CALCULATOR");
+        System.out.println("=================================================");
         
         System.out.print("Enter the first integer: " + num1);
 
-        System.out.print("Enter the second integer: " + num2);
+        System.out.print("\nEnter the second integer: " + num2);
 
-        System.out.println("\n===== CALCULATOR RESULTS =====");
+        System.out.println("\n\n============== CALCULATOR RESULTS ===============");
 
         // Addition 
         System.out.println("Addition: " + (num1 + num2));
@@ -32,7 +36,7 @@ public class FourFunc_calxc {
         
         if (num2 != 0) {
             // Integer division removes the fractional part. 
-            // With negative operands, division truncates toward zero.
+            // With negative operands, division is rounded toward zero.
             System.out.println("Division: " + (num1 / num2));
 
             // The remainder follows the sign of the first operand.
@@ -42,6 +46,7 @@ public class FourFunc_calxc {
             System.out.println("Modulus: Cannot calculate modulus by zero.");
         }
 
+         System.out.println("=================================================");
     }
     
 }

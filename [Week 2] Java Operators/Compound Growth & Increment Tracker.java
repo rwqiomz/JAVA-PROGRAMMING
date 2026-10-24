@@ -37,8 +37,8 @@ public class CompGrot_Inceter {
         System.out.println(++count);
         System.out.println(count);
 
-        /* count++ prints the old value first, then increases count by 1.*/
-        /* ++count increases count by 1 first, then prints the new value.+++++++++++++ */
+        // count++ prints the old value first, then increases count by 1.
+        // ++count increases count by 1 first, then prints the new value.+++++++++++++ 
         
     }
     

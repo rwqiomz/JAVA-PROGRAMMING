@@ -18,9 +18,9 @@ Year and Section: 2-3
 
 ⚙️ Java Operators 
 
-🔃 Control Flow (Part 1) 
+🔃 Control Flow Statements Part 1 
 
-♾️ Control Flow (Part 2) 
+♾️ Control Flow Statements Part 2
 
 📊 Arrays 
 

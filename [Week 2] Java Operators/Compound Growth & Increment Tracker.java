@@ -12,6 +12,10 @@ public class CompGrot_Inceter {
     public static void main(String[] args) {
         double balance = 1000;
 
+        System.out.println("===================================================");
+        System.out.println("\tCOMPOUND GROWTH & INCREMENT TRACKER");
+        System.out.println("===================================================");
+        
         System.out.println("Initial Balance: " + balance);
 
         balance += 100;
@@ -33,8 +37,8 @@ public class CompGrot_Inceter {
         System.out.println(++count);
         System.out.println(count);
 
-        // count++ prints the old value first, then increases count by 1.
-        // ++count increases count by 1 first, then prints the new value.+++++++++++++
+        /* count++ prints the old value first, then increases count by 1.*/
+        /* ++count increases count by 1 first, then prints the new value.+++++++++++++ */
         
     }
     

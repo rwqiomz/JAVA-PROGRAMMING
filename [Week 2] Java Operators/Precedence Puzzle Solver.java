@@ -15,8 +15,9 @@ public class Precedpuzzer {
         int second = 4;
         int third = 7;
         
-        // EXPERT PRECEDENCE PUZZLE SOLVER //
-        System.out.println("\nEXPERT PRECEDENCE PUZZLE SOLVER");
+        System.out.println("=================================================");
+        System.out.println("\tEXPERT PRECEDENCE PUZZLE SOLVER");
+        System.out.println("=================================================");
         
         /* PREDICTED: 33
            Multiplication (*) happens before addition (+).

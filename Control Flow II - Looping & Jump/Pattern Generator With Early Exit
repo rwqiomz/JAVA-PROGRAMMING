@@ -6,19 +6,19 @@ package cf2.looping.n.jump;
  */
 public class PattGenwrlyxit {
     public static void main(String[] args) {
-        int size = 5;
+        int size = 6;
 
         for (int row = 1; row <= size; row++) {
 
             // CONTINUE: Skip row 3
-            if (row == 3) {
+            if (row == 5) {
                 continue;
             }
 
             for (int col = 1; col <= row; col++) {
 
                 // BREAK: Stop the inner loop when column reaches 4
-                if (col == 4) {
+                if (col == 6) {
                     break;
                 }
 

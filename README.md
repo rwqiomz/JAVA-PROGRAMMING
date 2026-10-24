@@ -1,6 +1,6 @@
 💻INTE 201 - Programming 3 (Structured Programming)
 ------------------------------
-⭐ This repository contains my programming activities for INTE 201 - Computer Programming 3 (Structured Programming).
+⭐ This repository contains my programming activities for INTE 201 - Computer Programming 3 (Structured Programming)
 
 🧑🏻‍💻 Student Information
 ------------------------------

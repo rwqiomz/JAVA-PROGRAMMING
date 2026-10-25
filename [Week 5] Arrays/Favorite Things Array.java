@@ -10,14 +10,17 @@ package arrays;
  */
 public class FavoriteThings_Array {
     public static void main(String[] args) {
-        String[] favorites = {"Music", "Photography", "Thai GL Series", "Food", 
-            "Travel"};
+        String[] favorites = {"Music", "Photography", "Food", "Badminton", "Travel"};
+
+        System.out.println("=================================================");
+        System.out.println("           FAVORITE THINGS ARRAY :) ");
+        System.out.println("=================================================");
 
         for (int i = 0; i < favorites.length; i++) {
             System.out.println((i + 1) + ". " + favorites[i]);
         }
 
-        System.out.println("The Favorite Thinngs I love is: " + favorites.length);
+        System.out.println("=================================================");
+        System.out.println("Total Favorite Things: " + favorites.length);
     }
-    
 }

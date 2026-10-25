@@ -13,9 +13,9 @@ public class Overflow_ReferenceInvestigator {
         byte number = 127;
         number++;
 
-        String text1 = new String("Ellijah");
-        String text2 = new String("Ellijah");
-        String text3 = "Ellijah";
+        String text1 = new String("Paradise BKK");
+        String text2 = new String("Paradise BKK");
+        String text3 = "Paradise BKK";
         
          System.out.println("=================================================");
         System.out.println("        OVERFLOW & REFERENCE INVESTIGATOR ");

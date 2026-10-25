@@ -10,7 +10,7 @@ package arrays;
  */
 public class Statistics_Calculator {
     public static void main(String[] args) {
-        int[] scores = {85, 90, 78, 92, 88, 75, 95, 80};
+       int[] scores = {85, 90, 87, 92, 88, 93, 95, 81};
 
         int sum = 0;
         int highest = scores[0];
@@ -30,8 +30,13 @@ public class Statistics_Calculator {
 
         double average = (double) sum / scores.length;
 
-        System.out.println("Sum: " + sum);
-        System.out.println("Average: " + average);
+        System.out.println("=================================================");
+        System.out.println("           CLASS STATISTICS CALCULATOR");
+        System.out.println("=================================================");
+        
+        System.out.println("Student Scores: ");
+        System.out.println("85, 90, 87, 92, 88, 93, 95, 81");
+        System.out.println("\nAverage: " + average);
         System.out.println("Highest Score: " + highest);
         System.out.println("Lowest Score: " + lowest);
     }

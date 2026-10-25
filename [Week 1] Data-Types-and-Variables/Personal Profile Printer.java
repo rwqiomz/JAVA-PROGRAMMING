@@ -10,6 +10,10 @@ package data.types.and.variabless;
  */
 public class PersonalprofilePrinter {
     public static void main(String[] args) {
+
+        System.out.println("=================================================");
+        System.out.println("           PERSONAL PROFILE PRINTER ");
+        System.out.println("=================================================");
        
         int age = 19;
         double height = 165;

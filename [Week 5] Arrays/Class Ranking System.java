@@ -29,7 +29,7 @@ public class Ranking_System {
     
     public static void main(String[] args) {
         
-        String[] names = {"Lalina", "Natsha", "Ginny", "Jayna", "Ellija"};
+        String[] names = {"Lalina", "Natsha", "Ginny", "Jayna", "Ellijah"};
 
         int[][] quizData = {
             {95, 97, 95, 99},
@@ -39,9 +39,12 @@ public class Ranking_System {
             {94, 92, 93, 95}
         };
 
+        System.out.println("=================================================");
+        System.out.println("           CLASS STATISTICS CALCULATOR");
+        System.out.println("=================================================");
+        
         Student[] students = new Student[names.length];
 
-        // Create Student objects from the raw quiz data
         for (int i = 0; i < students.length; i++) {
             students[i] = new Student(names[i], quizData[i]);
         }
@@ -57,10 +60,9 @@ public class Ranking_System {
             }
         }
 
-        // Print leaderboard and handle ties
-        System.out.println("========== CLASS LEADERBOARD ==========");
+        System.out.println("-------------- CLASS LEADERBOARD ----------------");
         System.out.printf("%-8s %-12s %-10s%n", "Rank", "Name", "Average");
-        System.out.println("---------------------------------------");
+        System.out.println("-------------------------------------------------");
 
         int rank = 1;
 
@@ -75,14 +77,14 @@ public class Ranking_System {
         }
 
         // Linear search: find a student's rank by name
-        String searchName = "Diana";
+        String searchName = "Ellijah";
         int foundRank = -1;
 
         for (int i = 0; i < students.length; i++) {
             if (students[i].name.equalsIgnoreCase(searchName)) {
                 foundRank = i + 1;
 
-                // Use the same rank as the previous student if averages tie
+                // Linear search that returns the student's rank
                 if (i > 0 &&
                     students[i].average == students[i - 1].average) {
                     foundRank = i;

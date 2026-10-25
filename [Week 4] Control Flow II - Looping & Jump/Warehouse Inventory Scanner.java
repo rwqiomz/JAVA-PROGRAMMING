@@ -76,9 +76,11 @@ public class Warehouse_Invner {
                 int shelf = input.nextInt();
 
                 if (shelf >= 1 && shelf <= 20) {
-                    if (inventory[shelf - 1] == -1) {
+                    if (inventory[shelf - 1] == -1) 
+                    {
                         System.out.println("Cannot restock a damaged shelf.");
-                    } else {
+                    } 
+                    else {
                         restock(input, inventory, shelf - 1);
                     }
                 } else {

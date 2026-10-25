@@ -22,11 +22,13 @@ public class Warehouse_Invner {
         int choice;
 
         do {
-            System.out.println("\n=== WAREHOUSE INVENTORY ===");
+            System.out.println("\n=================================================");
+            System.out.println("           WAREHOUSE INVENTORY SCANNER ");
+            System.out.println("=================================================");
             System.out.println("1. View Total Inventory");
             System.out.println("2. Find Low Inventory Shelf");
             System.out.println("3. Restock a Shelf");
-            System.out.println("4. Exit");
+            System.out.println("0. Exit");
             System.out.print("Enter choice: ");
             choice = input.nextInt();
 
@@ -83,14 +85,15 @@ public class Warehouse_Invner {
                     System.out.println("Invalid shelf number.");
                 }
 
-            } else if (choice == 4) {
-                System.out.println("Exiting inventory system.");
+            } else if (choice == 0) {
+                System.out.println("\nExiting inventory system.");
+                System.out.println("Thank you! :)) ");
 
             } else {
                 System.out.println("Invalid menu choice.");
             }
 
-        } while (choice != 4);
+        } while (choice != 0);
 
         input.close();
     }
@@ -118,7 +121,7 @@ public class Warehouse_Invner {
         System.out.println("Restocking successful!");
         System.out.println("Updated shelf count: " + inventory[shelf]);
 
-        return; // End the restock method 
+        return; 
     }
     
 }

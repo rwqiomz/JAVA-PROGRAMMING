@@ -12,28 +12,41 @@ import java.util.Arrays;
 
 public class Mini_Tool {
     public static void main(String[] args) {
-        int[] scores = {85, 90, 78, 92, 88, 75, 95, 80};
-        int target = 92;
+        int[] scores = {85, 91, 87, 95, 88, 83, 90, 97};
+        int target = 97;
         int index = -1;
-
-        for (int i = 0; i < scores.length; i++) {
-            if (scores[i] == target) {
-                index = i;
-                break;
+        
+        System.out.println("=================================================");
+        System.out.println("           SEARCH & SORT MINI-TOOL");
+        System.out.println("=================================================");
+        
+        // For linear search
+        for (int i = 0; i < scores.length; i++) 
+            {
+                if (scores[i] == target) 
+                {
+                    index = i;
+                    break;
+                }
             }
-        }
 
-        if (index != -1) {
+        if (index != -1) 
+        {
             System.out.println("Score " + target + " found at index " + index);
-        } else {
+        } 
+        else 
+        {
             System.out.println("Score " + target + " not found.");
         }
 
-        int[] sortedScores = scores.clone();
+        // Copy the original array before sorting
+        int[] sortedScores = Arrays.copyOf(scores, scores.length);
 
+        // Sorting the copy keeps the original scores in their original order
         Arrays.sort(sortedScores);
 
-        System.out.println("Original Array: " + Arrays.toString(scores));
+        // Displays the original and sorted arrays
+        System.out.println("\nOriginal Array: " + Arrays.toString(scores));
         System.out.println("Sorted Array: " + Arrays.toString(sortedScores));
     }
     

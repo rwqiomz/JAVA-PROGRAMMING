@@ -13,21 +13,24 @@ public class Overflow_ReferenceInvestigator {
         byte number = 127;
         number++;
 
+        String text1 = new String("Ellijah");
+        String text2 = new String("Ellijah");
+        String text3 = "Ellijah";
+        
+         System.out.println("=================================================");
+        System.out.println("        OVERFLOW & REFERENCE INVESTIGATOR ");
+        System.out.println("=================================================");
+        
         System.out.println("Byte Overflow: " + number);
-
-        String text1 = new String("Hello");
-        String text2 = new String("Hello");
-        String text3 = "Hello";
-
+        
         System.out.println("\nString Comparisons:");
-        System.out.println("text1.equals(text2): " + text1.equals(text2));
-        System.out.println("text1.equals(text3): " + text1.equals(text3));
-        System.out.println("text2.equals 3(text3): " + text2.equals(text3));
-
-        System.out.println("\nReference Comparisons:");
         System.out.println("text1 == text2: " + (text1 == text2));
         System.out.println("text1 == text3: " + (text1 == text3));
         System.out.println("text2 == text3: " + (text2 == text3));
+
+        System.out.println("text1.equals(text2): " + text1.equals(text2));
+        System.out.println("text1.equals(text3): " + text1.equals(text3));
+        System.out.println("text2.equals 3(text3): " + text2.equals(text3));
 
         int[] array1 = {10, 20, 30};
         int[] array2 = array1;

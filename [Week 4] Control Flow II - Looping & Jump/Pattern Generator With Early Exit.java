@@ -12,13 +12,17 @@ public class PattGenwrlyxit {
     public static void main(String[] args) {
         int size = 6;
 
+        System.out.println("=================================================");
+        System.out.println("       PATTERN GENERATOR WITH EARLY EXIT");
+        System.out.println("=================================================");
+        
         for (int row = 1; row <= size; row++) {
 
             // CONTINUE: Skip row 3
             if (row == 5) {
                 continue;
             }
-
+             // Loop through the columns to print stars pattern 
             for (int col = 1; col <= row; col++) {
 
                 // BREAK: Stop the inner loop when column reaches 4

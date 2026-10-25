@@ -19,20 +19,18 @@ public class Precedpuzzer {
         System.out.println("\tEXPERT PRECEDENCE PUZZLE SOLVER");
         System.out.println("=================================================");
         
-        /* PREDICTED: 33
-           Multiplication (*) happens before addition (+).
-        */
-        
+        // PREDICTED: 33
+        // Multiplication happens before addition.
         System.out.println("Expression 1: " + (first + second * third));
-        /* PREDICTED: true
-            Arithmetic (+) and relational (>) are evaluated before logical (&&).
-        */
-        
-        System.out.println("Expression 2: " + (first > second && second + third == 10));
-        /* PREDICTED: 11
-            Increment (++) increases first before addition (+).
-        */
-        
+
+        // PREDICTED: false
+        // Addition happens before the equality comparison.
+        // The logical AND (&&) combines both conditions.
+        System.out.println("Expression 2: "
+                + (first > second && second + third == 10));
+
+        // PREDICTED: 10
+        // Increment increases first before addition.
         System.out.println("Expression 3: " + (++first + second));
         
     }

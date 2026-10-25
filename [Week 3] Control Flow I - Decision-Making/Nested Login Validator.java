@@ -10,12 +10,14 @@ package cf1.decision.making;
  */
 public class NestLog_Validt {
     public static void main(String[] args) {
-        String username = "student";
-        String password = "12345";
+        String username = "ellijah";
+        String correctPassword = "1125";
         boolean accountLocked = false;
 
-        if (username.equals("student")) {
-            if (password.equals("12345")) {
+        System.out.println("============ NESTED LOGIN VALIDATOR ==============");
+
+        if (username.equals("ellijah")) {
+            if (correctPassword.equals("1125")) {
                 if (!accountLocked) {
                     System.out.println("Login Successful!");
                 } else {

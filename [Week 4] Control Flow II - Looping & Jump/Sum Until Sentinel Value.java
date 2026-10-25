@@ -14,6 +14,10 @@ public class Until_SenValti {
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
 
+        System.out.println("=================================================");
+        System.out.println("           SUM UNTIL SENTINEL VALUE");
+        System.out.println("=================================================");
+
         int number = 0;
         int total = 0;
 

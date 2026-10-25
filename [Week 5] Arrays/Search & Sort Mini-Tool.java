@@ -39,11 +39,13 @@ public class Mini_Tool {
             System.out.println("Score " + target + " not found.");
         }
 
-        // Copy the original array before sorting
+        /* Copy the original array before sorting.
+        Sorting a copy keeps the original scores in their original order.*/
         int[] sortedScores = Arrays.copyOf(scores, scores.length);
 
-        // Sorting the copy keeps the original scores in their original order
+        // Sort the copied array from lowest to highest
         Arrays.sort(sortedScores);
+        
 
         // Displays the original and sorted arrays
         System.out.println("\nOriginal Array: " + Arrays.toString(scores));
